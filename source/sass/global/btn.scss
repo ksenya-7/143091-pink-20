@@ -1,0 +1,32 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: $mobile-width - 2 * $padding-min;
+  min-height: 52px;
+  padding-top: 4px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-content;
+
+  border: 2px solid $color-content;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-fonbasic;
+    background: $color-content;
+    border: 2px solid $color-content;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-fonbas3;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 $padding-min;
+
+  &--no-padding {
+    padding: 0;
+  }
+
+  @include viewport--md {
+    padding: 0 $padding-max;
+  }
+
+  @include viewport--lg {
+    padding: 0 $padding-max;
+  }
+}
