@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/143091-mishka-20) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/143091-pink-20) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808189-541c1580-a190-11e9-8c4c-459d9c0f22f5.jpg">
 
@@ -54,7 +54,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/143091-mishka-20.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/143091-mishka-20
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/143091-mishka-20/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/143091-mishka-20?type=dev
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/143091-pink-20.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/143091-pink-20
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/143091-pink-20/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/143091-pink-20?type=dev

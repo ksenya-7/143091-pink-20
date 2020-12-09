@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HTML Academy:</title>
-    <link
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <title>Pink</title>
+    <!-- <link
       rel="preload"
       href="fonts/.woff2"
       as="font"
@@ -19,8 +19,242 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" /> -->
   </head>
 
-  <body></body>
+  <body class="page__body">
+    <header class="page-header">
+      <a href="" class="page-header__logo">
+        <img
+          src="img/svg_inline/logo-mobile.svg"
+          width="74"
+          height="23"
+          alt="Pink"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>главная</a>
+            </li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">конкурс</a></li>
+            <li class="site-list__item"><a href="#">html academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Pink — это мобильное приложение для раскрашивания серых будней в серый
+        цвет
+      </h1>
+
+      <section class="intro">
+        <h2 class="intro-title">Взгляните на жизнь иначе!</h2>
+        <button class="intro-download">Скачать приложение</button>
+        <ul>
+          <li class="intro-logo__item">
+            <img
+              src="img/svg_inline/apple-logo.svg"
+              width="47"
+              height="56"
+              alt="Pink"
+            />
+          </li>
+          <li class="intro-logo__item">
+            <img
+              src="img/svg_inline/android-logo.svg"
+              width="43"
+              height="47"
+              alt="Pink"
+            />
+          </li>
+          <li class="intro-logo__item">
+            <img
+              src="img/svg_inline/microsoft-logo.svg"
+              width="44"
+              height="41"
+              alt="Pink"
+            />
+          </li>
+        </ul>
+        <p class="intro-description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения</h2>
+        <p class="advantages-intro">Устали от серости мегаполиса?</p>
+        <p class="advantages-intro">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper slider">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__description">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Иван Иванов</h3>
+              <p class="reviews__description">«Красота спасёт мир!»</p>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button
+              class="slider__toggle slider__toggle--current"
+              type="button"
+            ></button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
+        </div>
+      </section>
+
+      <section class="price">
+        <h2 class="visually-hidden">Цена подписки</h2>
+        <div class="price__wrapper slider">
+          <ul class="price__list slider__list">
+            <li class="price__item slider__item">
+              <h3 class="price__title">База</h3>
+              <p class="price__description">1,99 USD</p>
+            </li>
+            <li class="price__item slider__item slider__item--current">
+              <h3 class="price__title">СТАНДАРТ</h3>
+              <p class="price__description">3,99 USD</p>
+              <ul class="price__table">
+                <li class="price__row">Розовый фильтр <span>да</span></li>
+                <li class="price__row">Смайлики <span>да</span></li>
+                <li class="price__row">Комментарии <span>нет</span></li>
+              </ul>
+            </li>
+            <li class="price__item slider__item">
+              <h3 class="price__title">АНЛИМ</h3>
+              <p class="price__description">9,99 USD</p>
+            </li>
+          </ul>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button"></button>
+            <button
+              class="slider__toggle slider__toggle--current"
+              type="button"
+            ></button>
+            <button class="slider__toggle" type="button"></button>
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__text">
+          <li>
+            <a class="contacts__phone" href="tel:+78125556666">
+              <span class="contacts__phone-mobile"><b>Звоните:</b></span> +7
+              (812) 555-66-66
+            </a>
+          </li>
+          <li>
+            <a class="contacts__mail" href="mail:mail@htmlacademy.ru">
+              <span class="contacts__email"><b>Пишите:</b></span>
+              mail@htmlacademy.ru
+            </a>
+          </li>
+          <li>
+            <span class="contacts__address"
+              ><b>Приезжайте в гости:</b> г. Санкт-Петербург, ул. Большая
+              Конюшенная 19/8</span
+            >
+          </li>
+        </ul>
+        <img
+          src="img/svg_inline/map marker.svg"
+          width="47"
+          height="56"
+          alt="Pink"
+        />
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <img
+        src="img/svg_inline/logotype-blue-tablet.svg"
+        width="47"
+        height="56"
+        alt="Pink"
+      />
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <img
+            src="img/svg_inline/twitter.svg"
+            width="47"
+            height="56"
+            alt="Pink"
+          />
+        </li>
+        <li class="page-footer__item">
+          <img
+            src="img/svg_inline/facebook.svg"
+            width="47"
+            height="56"
+            alt="Pink"
+          />
+        </li>
+        <li class="page-footer__item">
+          <img
+            src="img/svg_inline/youtube.svg"
+            width="47"
+            height="56"
+            alt="Pink"
+          />
+        </li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано
+        <a href="" class="page-footer__copyright-logo">
+          <img
+            src="img/svg_inline/html academy.svg"
+            width="47"
+            height="56"
+            alt="Pink"
+          />
+        </a>
+      </p>
+    </footer>
+  </body>
 </html>
