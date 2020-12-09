@@ -1,0 +1,11 @@
+@mixin viewport--md {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin viewport--lg {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
