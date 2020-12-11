@@ -4,29 +4,29 @@
   justify-content: center;
 
   width: $mobile-width - 2 * $padding-min;
-  min-height: 52px;
-  padding-top: 4px;
+  min-height: 55px;
+  // padding-top: 4px;
 
   font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 18px;
   text-align: center;
-  text-transform: uppercase;
-  color: $color-content;
+  color: $color-fonbasic;
 
-  border: 2px solid $color-content;
+  border: 3px solid $color-fonbasic;
+  border-radius: 29px;
   background-color: transparent;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    color: $color-fonbasic;
-    background: $color-content;
-    border: 2px solid $color-content;
-    outline: none;
-  }
+  // &:hover,
+  // &:focus {
+  //   color: $color-fonbasic;
+  //   background: $color-text;
+  //   border: 2px solid $color-text;
+  //   outline: none;
+  // }
 
-  &:active {
-    color: $color-fonbas3;
-  }
+  // &:active {
+  //   color: $color-fonbas3;
+  // }
 }

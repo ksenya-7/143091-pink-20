@@ -2,10 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pink</title>
-    <!-- <link
+    <link
       rel="preload"
       href="fonts/.woff2"
       as="font"
@@ -19,23 +19,39 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img
-          src="img/svg_inline/logo-mobile.svg"
-          width="74"
-          height="23"
-          alt="Pink"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+      <div class="page-header__close">
+        <a href="" class="page-header__logo">
+          <img
+            src="img/svg_inline/logo-mobile.svg"
+            width="74"
+            height="23"
+            alt="Pink"
+          />
+        </a>
+        <button class="main-nav__toggle visually-hidden" type="button">
+          <img
+            src="img/svg_inline/open-menu.svg"
+            width="50"
+            height="24"
+            alt="Открыть меню"
+          />
+          <button class="main-nav__toggle" type="button">
+            <img
+              src="img/svg_inline/close-menu.svg"
+              width="23"
+              height="23"
+              alt="Открыть меню"
+            />
+          </button>
         </button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -57,7 +73,7 @@
 
       <section class="intro">
         <h2 class="intro-title">Взгляните на жизнь иначе!</h2>
-        <button class="intro-download">Скачать приложение</button>
+        <button class="intro-download btn">Скачать приложение</button>
         <ul class="intro__list">
           <li class="intro__item">
             <img
@@ -130,20 +146,20 @@
                 будущей женой в комментариях к выложенной фотографии!»
               </p>
             </li>
-            <li class="reviews__item slider__item">
+            <li class="reviews__item slider__item visually-hidden">
               <h3 class="reviews__title">Иван Иванов</h3>
               <p class="reviews__description">«Красота спасёт мир!»</p>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
-            <button
-              class="slider__toggle slider__toggle--current"
-              type="button"
-            ></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-          </p>
         </div>
+        <p class="reviews__toggles slider__toggles">
+          <button
+            class="slider__toggle slider__toggle--current"
+            type="button"
+          ></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+        </p>
       </section>
 
       <section class="price">
@@ -151,21 +167,61 @@
         <div class="price__wrapper slider">
           <ul class="price__list slider__list">
             <li class="price__item slider__item">
-              <h3 class="price__title">База</h3>
-              <p class="price__description">1,99 USD</p>
+              <div class="price__title">
+                <h3 class="price__name">База</h3>
+                <p class="price__description">1,99 USD</p>
+              </div>
+              <ul class="price__table">
+                <li class="price__row">
+                  Розовый фильтр <span class="price__row--yes"></span>
+                </li>
+                <li class="price__row">
+                  Смайлики <span class="price__row--no"></span>
+                </li>
+                <li class="price__row">
+                  Комментарии <span class="price__row--no"></span>
+                </li>
+              </ul>
             </li>
             <li class="price__item slider__item slider__item--current">
-              <h3 class="price__title">СТАНДАРТ</h3>
-              <p class="price__description">3,99 USD</p>
+              <div class="price__title">
+                <img
+                  src="img/svg_inline/hit.svg"
+                  width="74"
+                  height="74"
+                  alt="Хит"
+                />
+                <h3 class="price__name">СТАНДАРТ</h3>
+                <p class="price__description">3,99 USD</p>
+              </div>
               <ul class="price__table">
-                <li class="price__row">Розовый фильтр <span>да</span></li>
-                <li class="price__row">Смайлики <span>да</span></li>
-                <li class="price__row">Комментарии <span>нет</span></li>
+                <li class="price__row">
+                  Розовый фильтр <span class="price__row--yes"></span>
+                </li>
+                <li class="price__row">
+                  Смайлики <span class="price__row--yes"></span>
+                </li>
+                <li class="price__row">
+                  Комментарии <span class="price__row--no"></span>
+                </li>
               </ul>
             </li>
             <li class="price__item slider__item">
-              <h3 class="price__title">АНЛИМ</h3>
-              <p class="price__description">9,99 USD</p>
+              <div class="price__title">
+                <h3 class="price__name">АНЛИМ</h3>
+                <p class="price__description">9,99 USD</p>
+              </div>
+              <ul class="price__table">
+                <li class="price__row">
+                  Розовый фильтр <span class="price__row--yes"></span>
+                </li>
+                <li class="price__row">
+                  Смайлики <span class="price__row--yes"></span>
+                </li>
+                <li class="price__row">
+                  Комментарии <span class="price__row--yes"></span>
+                </li>
+              </ul>
             </li>
           </ul>
           <p class="price__toggles slider__toggles">
@@ -182,27 +238,28 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contacts__text">
-          <li>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__text"><b>Звоните:</b></span>
             <a class="contacts__phone" href="tel:+78125556666">
-              <span class="contacts__phone-mobile"><b>Звоните:</b></span> +7
-              (812) 555-66-66
+              +7 (812) 555-66-66
             </a>
           </li>
-          <li>
+          <li class="contacts__item">
+            <span class="contacts__text"><b>Пишите:</b></span>
             <a class="contacts__mail" href="mail:mail@htmlacademy.ru">
-              <span class="contacts__email"><b>Пишите:</b></span>
               mail@htmlacademy.ru
             </a>
           </li>
-          <li>
+          <li class="contacts__item">
+            <span class="contacts__text"><b>Приезжайте в гости:</b> </span>
             <span class="contacts__address"
-              ><b>Приезжайте в гости:</b> г. Санкт-Петербург, ул. Большая
-              Конюшенная 19/8</span
+              >г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span
             >
           </li>
         </ul>
         <img
+          class="contacts__marker"
           src="img/svg_inline/map-marker.svg"
           width="47"
           height="56"
@@ -213,45 +270,48 @@
 
     <footer class="page-footer">
       <img
-        src="img/svg_inline/logotype-blue-tablet.svg"
-        width="47"
-        height="56"
+        src="img/svg_inline/logo-footer.svg"
+        width="145"
+        height="40"
         alt="Pink"
       />
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <img
+            class="page-footer__item--twitter"
             src="img/svg_inline/twitter.svg"
-            width="47"
-            height="56"
-            alt="Pink"
+            width="18"
+            height="14"
+            alt="Twitter"
           />
         </li>
         <li class="page-footer__item">
           <img
+            class="page-footer__item--facebook"
             src="img/svg_inline/facebook.svg"
-            width="47"
-            height="56"
-            alt="Pink"
+            width="9"
+            height="18"
+            alt="Facebook"
           />
         </li>
         <li class="page-footer__item">
           <img
+            class="page-footer__item--youtube"
             src="img/svg_inline/youtube.svg"
-            width="47"
-            height="56"
-            alt="Pink"
+            width="15"
+            height="13"
+            alt="Youtube"
           />
         </li>
       </ul>
       <p class="page-footer__copyright">
-        Разработано
+        <span>Разработано </span>
         <a href="" class="page-footer__copyright-logo">
           <img
             src="img/svg_inline/html-academy.svg"
-            width="47"
-            height="56"
-            alt="Pink"
+            width="27"
+            height="34"
+            alt="HTMLacademy"
           />
         </a>
       </p>
