@@ -1,0 +1,37 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+
+  // width: 100%;
+
+  // font-style: normal;
+  // font-weight: bold;
+  // font-size: 17px;
+  // line-height: 24px;
+  // color: $color-text;
+}
+
+.main-nav__toggle {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: none;
+}
+
+.main-nav__toggle img {
+  width: 50px;
+  height: 24px;
+}
+
+// .main-nav__list {
+//   margin: 0;
+//   padding: 0;
+
+//   list-style: none;
+// }

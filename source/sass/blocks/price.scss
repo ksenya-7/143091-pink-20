@@ -1,0 +1,117 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-width: 840px;
+  max-width: 840px; //убрать потом?
+  min-height: 500px;
+  // overflow: hidden;
+
+  background-image: url("../img/svg_inline/grey-back.svg");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.price__list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 840px;
+  max-width: 840px; //убрать потом?
+  margin: 0 auto;
+  // margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.price__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-fonbasic;
+}
+
+.price__title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 278px;
+  height: 98px;
+  // margin-left: 282px;
+  background-color: $color-fonmenu;
+}
+
+.price__title img {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 74px;
+  height: 74px;
+}
+
+.price__name {
+  margin: 0;
+  padding: 0;
+}
+
+.price__description {
+  margin: 0;
+  padding: 0;
+}
+
+.price__table {
+  margin: 0;
+  padding: 0;
+  width: 278px;
+  list-style: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-fonmenu;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.price__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-left: 20px;
+
+  &--yes {
+    margin-right: 17px;
+    background-image: url("../img/svg_inline/yes.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &--no {
+    margin-right: 17px;
+    background-image: url("../img/svg_inline/no.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.price__row span {
+  padding-right: 17px;
+}
+
+.price__toggles {
+  margin: 0 auto;
+  width: 56px;
+  height: 12px;
+}

@@ -1,0 +1,28 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 63px;
+  background-color: $color-fonmenu;
+  box-shadow: 0px -1px 0px $color-text, inset 0px 1px 0px $color-menushadow;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-fonbasic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+// .site-list__item a{
+//   display: block;
+//   margin-top: 25px;
+//   margin-bottom: 25px;
+// }

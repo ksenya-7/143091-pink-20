@@ -1,0 +1,57 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  max-width: 320px; //убрать потом?
+  min-height: 285px;
+}
+
+.page-footer__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 172px;
+  list-style: none;
+}
+
+.page-footer__copyright-logo {
+  margin-left: 15px;
+}
+
+.page-footer__item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 3px solid $color-menuopacity;
+  border-radius: 50%;
+}
+
+.page-footer__item--twitter {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.page-footer__item--facebook {
+  position: absolute;
+  top: 13px;
+  left: 17px;
+}
+
+.page-footer__item--youtube {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
