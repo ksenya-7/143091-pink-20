@@ -4,79 +4,80 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  // position: relative;
   min-height: 70px;
   min-width: 320px;
 
-  max-width: 320px; //убрать потом?
-
-  // padding-top: 23px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-
   background-color: $color-fonmenu;
 
-  // @include viewport--md {
-  //   height: 89px;
-  // }
+  @include viewport--md {
+
+  }
+
+  @include viewport--lg {
+    // display: none;
+    // position: relative;
+    // z-index: 5;
+    align-items: center;
+    // left: 50%;
+    // transform: translateX(-50%);
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: $desktop-width;
+    background-color: $color-fontint1;
+  }
 }
 
-.page-header__close {
+.page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 $padding-min;
   position: relative;
   min-height: 66px;
   min-width: 320px;
 
-  max-width: 320px; //убрать потом?
-
-  padding-top: 23px;
-  padding-left: 20px;
-  padding-right: 20px;
-
   background-color: $color-fonmenu;
   box-shadow: 0px 1px 0px $color-text;
+
+  @include viewport--md {
+    min-height: 110px;
+  }
+
+  @include viewport--lg {
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 .page-header__logo {
   margin: 0;
-  padding: o;
+  padding: 0;
   cursor: pointer;
 
   &--no-pointer {
     pointer-events: none;
   }
 
-  // @include viewport--md {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
+  @include viewport--md {
+    & picture {
+      width: 145px;
+      height: 40px;
+    }
+  }
 
-  //   justify-content: flex-start;
-  //   width: 50%;
-  //   padding-top: 22px;
-  //   padding-bottom: 21px;
-  //   padding-left: 48px;
-  // }
+  @include viewport--lg {
+    margin: 0 170px 0 $padding-max;
 
-  // @include viewport--lg {
-  //   left: 50%;
-  //   justify-content: center;
+    // left: 50%;
+    // transform: translateX(-50%);
 
-  //   width: auto;
-  //   padding-top: 9px;
-  //   padding-bottom: 7px;
-  //   padding-left: 0;
-
-  //   transform: translateX(-50%);
-
-  //   & picture {
-  //     width: 103px;
-  //     height: 34px;
-  //   }
-  // }
+    & picture {
+      width: 147px;
+      height: 40px;
+    }
+  }
 
   // &:hover,
   // &:focus {
@@ -92,15 +93,32 @@
   width: 74px;
   height: 23px;
 
-  // @include viewport--md {
-  //   display: block;
-  //   width: 87px;
-  //   height: auto;
-  // }
+  @include viewport--md {
+    display: block;
+    width: 145px;
+    height: 40px;
+  }
 
   // @include viewport--lg {
   //   width: 103px;
   // }
 }
 
-// npm run styles
+.page-header__toggle {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: none;
+
+  @include viewport--lg {
+    display: none;
+  }
+}
+
+// .page-header__toggle img {
+//   width: 50px;
+//   height: 24px;
+// }

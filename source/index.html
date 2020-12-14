@@ -25,47 +25,89 @@
 
   <body>
     <header class="page-header">
-      <div class="page-header__close">
-        <a href="" class="page-header__logo">
-          <img
-            src="img/svg_inline/logo-mobile.svg"
-            width="74"
-            height="23"
-            alt="Pink"
-          />
+      <!-- <div class="main-nav__wrapper"> -->
+      <div class="page-header__wrapper">
+        <a href="" class="page-header__logo" aria-label="логотип Pink">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/svg_inline/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 660px)"
+              srcset="img/svg_inline/logo-tablet.svg"
+            />
+            <img
+              src="img/svg_inline/logo-mobile.svg"
+              width="74"
+              height="23"
+              alt="Pink"
+            />
+          </picture>
         </a>
-        <button class="main-nav__toggle visually-hidden" type="button">
+        <button
+          class="page-header__toggle"
+          type="button"
+          aria-label="навигация для открытия и закрытия выпадающего меню"
+        >
           <img
+            class="visually-hidden"
             src="img/svg_inline/open-menu.svg"
             width="50"
             height="24"
             alt="Открыть меню"
           />
-          <button class="main-nav__toggle" type="button">
-            <img
-              src="img/svg_inline/close-menu.svg"
-              width="23"
-              height="23"
-              alt="Открыть меню"
-            />
-          </button>
+          <img
+            src="img/svg_inline/close-menu.svg"
+            width="23"
+            height="23"
+            alt="Закрыть меню"
+          />
         </button>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>главная</a>
-            </li>
-            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">конкурс</a></li>
-            <li class="site-list__item"><a href="#">html academy</a></li>
-          </ul>
-        </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML academy</a></li>
+        </ul>
       </nav>
     </header>
 
     <main class="page-main">
+      <!-- <div class="page-main__header">
+        <a href="" class="page-header__logo" aria-label="логотип Pink">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/svg_inline/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 660px)"
+              srcset="img/svg_inline/logo-tablet.svg"
+            />
+            <img
+              src="img/svg_inline/logo-mobile.svg"
+              width="74"
+              height="23"
+              alt="Pink"
+            />
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML academy</a></li>
+          </ul>
+        </nav>
+      </div> -->
       <h1 class="visually-hidden">
         Pink — это мобильное приложение для раскрашивания серых будней в серый
         цвет
@@ -305,7 +347,7 @@
         </li>
       </ul>
       <p class="page-footer__copyright">
-        <span>Разработано </span>
+        <span>Разработано</span>
         <a href="" class="page-footer__copyright-logo">
           <img
             src="img/svg_inline/html-academy.svg"

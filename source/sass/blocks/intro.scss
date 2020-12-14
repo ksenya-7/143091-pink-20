@@ -1,41 +1,94 @@
 .intro {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
   margin: 0;
-  padding: 0;
+  padding: 29px 20px;
   min-width: 320px;
-  max-width: 320px; //убрать потом?
-  min-height: 733px;
-  background-color: $color-fonintro;
+  width: 100%;
+  min-height: 690px;
+  background-color: $color-backintro;
   background-image: url("../img/jpg/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center -55px;
+
+  @include viewport--md {
+    background-position: center -160px;
+    background-image: url("../img/jpg/back-tablet.jpg");
+    min-height: 875px;
+  }
+
+  @include viewport--lg {
+    position: relative;
+    z-index: -1;
+    top: -110px;
+    width: $desktop-width;
+    min-height: 963px;
+    background-position: center -40px;
+    background-image: url("../img/jpg/back-desktop.jpg");
+  }
 }
 
 .intro-title {
-  flex-grow: 2;
   width: 280px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 350px;
+
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 29px;
   color: $color-fonbasic;
   text-align: center;
-  text-transform: uppercase;
+
+  @include viewport--md {
+    width: 300px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @include viewport--lg {
+    width: 300px;
+    margin-top: 105px;
+    margin-bottom: 30px;
+
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.intro-download {
+  margin-bottom: 38px;
 }
 
 .intro__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   min-width: 204px;
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
   list-style: none;
+
+  @include viewport--md {
+    width: 300px;
+    padding: 0 48px;
+  }
 }
 
 .intro-description {
+  margin: 0;
+  padding: 0;
   width: 280px;
   font-weight: 300;
   font-size: 14px;

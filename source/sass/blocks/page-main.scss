@@ -2,5 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   margin: 0 auto;
+}
+
+.page-main__header {
+  display: none;
+
+  @include viewport--lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: auto;
+    right: auto;
+    margin: 0 auto;
+    min-height: 110px;
+    width: $desktop-width;
+    background-color: $color-fontint1;
+  }
 }
